@@ -1,0 +1,15 @@
+{% extends "layout.html" %} {% block content %}
+<form>
+  <label>Enter Contact Number</label> <br />
+  <br />
+  <input type="text" id="contact-number" /> <br />
+  <br />
+  <label>Enter From Number</label> <br />
+  <br />
+  <input type="text" id="from-number" /> <br />
+  <br />
+  <button class="submit-data">Call</button> <br />
+  <br />
+  <a href="{{ url_for('sms') }}">send sms</a>
+</form>
+{% endblock %}
